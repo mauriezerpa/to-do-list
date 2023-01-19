@@ -15,42 +15,71 @@
 </head>
 
 <body>
-    <div >
+
+    <div class="todo-container" >
+
         <header>
             <h1> To do List</h1>
         </header>
         
-        <form>
+        <form id="todo-form">
            <p>Adicione a sua tarefa: </p>
-           <div>
-              <input>
-              <button>
+           <div class="form-control" >
+              <input type="text" id="todo-input" placeholder="O que você vai fazer?
+              " >
+              <button type="submit">
                 <i class="fa-thin fa-plus"></i>
               </button>
            </div>
         </form>
            
-        <form>
+        <form id="edit-form">
             <p>Edite a sua tarefa: </p>
-        <div>
-            <input type="text">
+        <div class="form-control">
+            <input type="text" id="edit-input" >
             <button>
                 <i class="fa-solid fa-check-double"></i>
             </button>
         </div>
-        <button> Cancelar </button>
         </form>
 
-        <div>
-            <div>
+        <div id="toolbar">
+            <div id="search">
                 <h4>Pesquisar: </h4>
                 <form>
-                    <input type="text">
+                    <input type="text" id="search-input" placeholder="Buscar">
                     <button>
                         <i class="fa-solid fa-delete-left"></i>
                     </button>
                 </form>
             </div>
+
+            <div>
+                <h4> Filtrar: </h4>
+                <select>
+                    <option> Todos </option>
+                    <option> Feitos </option>
+                    <option> A fazer </option>
+                </select>
+            </div>
+
+
+        <div>
+           <div>
+             <h3> Estou fazendo alguma coisa...</h3>
+             <button>
+                <i class="fa-solid fa-check"></i>
+             </button>
+             <button>
+                <i class="fa-solid fa-pen"></i>
+             </button>
+             <button>
+                <i class="fa-solid fa-xmark"></i>
+             </button>
+           </div>
+        </div>
+
+
         </div>
         
     </div>
